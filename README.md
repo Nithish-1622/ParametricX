@@ -4,6 +4,11 @@
 
 ---
 
+## 🚀 Live Deployment
+[![Live Demo](https://img.shields.io/badge/Live-Demo-22C55E?style=for-the-badge&logo=vercel&logoColor=white)](https://parametric-x.vercel.app/)
+
+https://parametric-x.vercel.app/
+
 ## Overview
 
 ParametriX is a fully automated parametric insurance platform designed for gig economy delivery workers. It provides real-time compensation for income loss caused by environmental and operational disruptions such as:
