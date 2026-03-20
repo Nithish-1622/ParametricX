@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #070d19;
+  --bg-card: rgba(255, 255, 255, 0.06);
+  --text-main: #dbe5ff;
+  --text-muted: #96a3bf;
+  --border-soft: rgba(148, 163, 184, 0.26);
+}
+
+:root.light {
+  --bg-main: #edf3ff;
+  --bg-card: rgba(255, 255, 255, 0.82);
+  --text-main: #0f172a;
+  --text-muted: #4b5563;
+  --border-soft: rgba(148, 163, 184, 0.3);
+}
+
+* {
+  @apply box-border;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  @apply m-0 font-body;
+  color: var(--text-main);
+  background: var(--bg-main);
+  background-image: radial-gradient(circle at 12% 0%, rgba(59, 130, 246, 0.24), transparent 28%),
+    radial-gradient(circle at 90% 12%, rgba(34, 197, 94, 0.2), transparent 30%),
+    linear-gradient(180deg, rgba(8, 14, 28, 1), rgba(7, 13, 25, 1));
+}
+
+.light body {
+  background-image: radial-gradient(circle at 8% 0%, rgba(59, 130, 246, 0.2), transparent 26%),
+    radial-gradient(circle at 92% 18%, rgba(34, 197, 94, 0.14), transparent 28%),
+    linear-gradient(180deg, #f8fbff, #edf3ff);
+}
+
+.glass {
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 10px 28px rgba(6, 12, 24, 0.24);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #22c55e 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.5);
+  border-radius: 999px;
+}
+
+input,
+select,
+textarea {
+  background-color: #e5e7eb !important;
+  color: #111827 !important;
+  border-color: #cbd5e1 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #4b5563 !important;
+}
